@@ -14,3 +14,5 @@ st.title("Voz a texto y traductor")
 st.subheader("sistema para introducir texto por medio de voz y traducirlo")
 
 image = Image.open('voz a texto y traductor.jpg')
+
+st.image(image)

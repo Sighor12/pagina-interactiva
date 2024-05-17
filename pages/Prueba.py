@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-st.title("prueba de sistemas")
+st.title("Prueba de interacciones")
 
 image = Image.open('Sistema.jpg')
 st.image(image)

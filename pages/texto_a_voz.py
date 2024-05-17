@@ -16,7 +16,7 @@ try:
 except:
   pass
 
-st.write("Pasemos ahora una frase cualquiera de texto a voz. Escribe abajo en el espacio en blanco que quieras que se convierta en una salida de audio en español.")
+st.write("En esta sección podras escribir una frase cualquiera de texto a voz. Escribe abajo en el espacio en blanco que quieras que se convierta en una salida de audio en español. Pruebalo!")
 
 text = st.text_input("Ingresa cualquier texto")
 

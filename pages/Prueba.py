@@ -9,32 +9,32 @@ st.image(image)
 st.write("A continuación, se te presentarán unas interacciones de ejemplo con botones y texto para que puedas testear algunas de las funciones que se verán mas adelante del proceso. ¡diviertete probando todo lo que quieras!") 
 
 
-texto = st.text_input('Introduce texto', 'Texto propio')
+texto = st.text_input('Introduce cualquier texto', 'Escribir aqui')
 st.write('El texto escrito es', texto)
 
-st.subheader("Ahora usemos 2 columnas")
 
-col1, col2 = st.columns(2)
 
-with col1:
-  st.subheader("Primera columna")
-  st.write("Las interfaces multimodales mejoran la experiencia del usuario")
-  resp = st.checkbox('Estoy de acuerdo')
+  st.subheader("Primera prueba")
+  st.write("prueba el uso de los siguientes botones")
+  resp = st.checkbox('boton #1')
+  resp2 = st.checkbox('boton #2')
   if resp:
-    st.write('Correcto')
+    st.write('1 presionado')
+  if resp2:
+    st.write('2 presionado')
 
-with col2:
-  st.subheader("Segunda columna")
-  modo = st.radio("Que modalidad es la principal de tu interfaz", ('visual', 'auditiva', 'Táctil'))
-  if modo == 'visual':
-    st.write('La vista es fundamental para tu interfaz')
-  if modo == 'auditiva':
-    st.write('La audición es fundamental para tu interfaz')
-  if modo == 'Táctil':
-    st.write('El tacto es fundamental para tu interfaz')
+
+  st.subheader("Segunda prueba")
+  modo = st.radio("¿Cual es tu función de entrada favorita de usar en interfaces multimodales?", ('Teclado y ratón', 'Escritura', 'Voz'))
+  if modo == 'Teclado y ratón':
+    st.write('Elegiste teclado y ratón')
+  if modo == 'Escritura':
+    st.write('Elegiste escritura')
+  if modo == 'Voz':
+    st.write('Elegiste voz')
 
 st.subheader("Uso de Botones")
-if st.button('presiona el botón'):
-  st.write('Gracias por presionar')
+if st.button('prueba el botón'):
+  st.write('botón listo')
 else:
-  st.write('No has presionado aún')
+  st.write('botón no presionado')

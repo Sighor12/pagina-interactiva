@@ -14,24 +14,24 @@ st.write('El texto escrito es', texto)
 
 
 
-  st.subheader("Primera prueba")
-  st.write("prueba el uso de los siguientes botones")
-  resp = st.checkbox('boton #1')
-  resp2 = st.checkbox('boton #2')
-  if resp:
-    st.write('1 presionado')
-  if resp2:
-    st.write('2 presionado')
+st.subheader("Primera interacción")
+st.write("prueba el uso de los siguientes botones")
+resp = st.checkbox('boton #1')
+resp2 = st.checkbox('boton #2')
+if resp:
+  st.write('1 presionado')
+if resp2:
+  st.write('2 presionado')
 
 
-  st.subheader("Segunda prueba")
-  modo = st.radio("¿Cual es tu función de entrada favorita de usar en interfaces multimodales?", ('Teclado y ratón', 'Escritura', 'Voz'))
-  if modo == 'Teclado y ratón':
-    st.write('Elegiste teclado y ratón')
-  if modo == 'Escritura':
-    st.write('Elegiste escritura')
-  if modo == 'Voz':
-    st.write('Elegiste voz')
+st.subheader("Segunda prueba")
+modo = st.radio("¿Cual es tu función de entrada favorita de usar en interfaces multimodales?", ('Teclado y ratón', 'Escritura', 'Voz'))
+if modo == 'Teclado y ratón':
+  st.write('Elegiste teclado y ratón')
+if modo == 'Escritura':
+  st.write('Elegiste escritura')
+if modo == 'Voz':
+  st.write('Elegiste voz')
 
 st.subheader("Uso de Botones")
 if st.button('prueba el botón'):

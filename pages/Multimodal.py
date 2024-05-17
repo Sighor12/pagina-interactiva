@@ -6,4 +6,4 @@ st.write("Las interfaces multimodales son sistemas de interacción múltiple que
 
 image = Image.open('interfaz.jpg')
 
-st.image(image, caption='multimodales')
+st.image(image)

@@ -9,7 +9,7 @@ from PIL import Image
 st.title("Texto a voz")
 image = Image.open('texto a voz.png')
 
-st.image(image,width=200)
+st.image(image,width=400)
 
 try:
   os.mkdir("temp")

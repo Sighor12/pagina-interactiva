@@ -6,4 +6,4 @@ st.write("bienvenido a esta página interactiva. Aqúi podras ver el uso de algu
 
 image = Image.open('saludo.jpg')
 
-st.image(image, caption='bienvenida')
+st.image('image')

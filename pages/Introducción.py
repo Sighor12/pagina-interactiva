@@ -6,4 +6,4 @@ st.write("en esta página podrá ver el funcionamiento de diversos sistemas que 
 
 image = Image.open('Sistema.jpg')
 
-st.image(image, caption='Sistema')
+st.image(image)

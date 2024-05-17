@@ -15,7 +15,7 @@ st.subheader("sistema para introducir texto por medio de voz y traducirlo")
 
 image = Image.open('voz a texto y traductor.jpg')
 
-st.image(image)
+st.image(image,width=300)
 
 st.write("En esta sección podrás interactuar con el sistema de voz al decir algún tipo de frase que quieras pasar a texto. Además, si buscas saber su significado en otro idioma, puedes decidir que tipo de salida tendrá de los distintos idiomas cargados en el sistema. Pruebalo!")
 

@@ -31,7 +31,7 @@ client1.connect(broker,port)
 model = load_model('keras_model.h5')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
-st.title("Sistema MTTQ")
+st.title("Sistema MQTT")
 st.write("por último, este sistema se utiliza de la mano de una página web llamada "WOKWI" la cual maneja simulaciones de modelos de sistemas embebidos físicos y simula su comportamiento por medio de las funciones de esta aplicación. ¡Mira como funciona!")
 img_file_buffer = st.camera_input("Toma una Foto")
 

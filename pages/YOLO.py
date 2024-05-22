@@ -27,7 +27,6 @@ with st.sidebar:
 
 
 picture = st.camera_input("Capturar foto",label_visibility='visible' )
-st.write("la siguiente interfaz es relacionada a YOLO (You Only Look Once), consiste en un sistema que puede detectar objetos dentro de una foto en tiempo real que utiliza una única red neuronal para dicha tarea. ¡Activa tu camara y ve por ti mismo como funciona!")
 
 if picture:
     #st.image(picture)
@@ -74,3 +73,4 @@ if picture:
         # agrupar los datos por la columna "categoria" y sumar las cantidades
         df_sum = data2.groupby('Categoría')['Cantidad'].sum().reset_index() 
         df_sum
+st.write("la siguiente interfaz es relacionada a YOLO (You Only Look Once), consiste en un sistema que puede detectar objetos dentro de una foto en tiempo real que utiliza una única red neuronal para dicha tarea. ¡Activa tu camara y ve por ti mismo como funciona!")

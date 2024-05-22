@@ -8,7 +8,7 @@ import numpy as np
 from PIL import Image as Image, ImageOps as ImagOps
 from keras.models import load_model
 
-def on_publish(client,userdata,result):             #create function for callback
+def on_publish(client,userdata,result):             
     print("el dato ha sido publicado \n")
     pass
 
@@ -23,7 +23,7 @@ def on_message(client, userdata, message):
 
 broker="broker.mqttdashboard.com"
 port=1883
-client1= paho.Client("Sigh")
+client1= paho.Client("Nat")
 client1.on_message = on_message
 client1.on_publish = on_publish
 client1.connect(broker,port)

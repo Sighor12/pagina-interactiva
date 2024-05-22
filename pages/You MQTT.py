@@ -55,10 +55,10 @@ if img_file_buffer is not None:
     prediction = model.predict(data)
     print(prediction)
     if prediction[0][0]>0.3:
-      st.header('Ser')
+      st.header('Joven')
       client1.publish("EWAW","{'gesto': 'Persona'}",qos=0, retain=False)
       time.sleep(0.2)
     if prediction[0][1]>0.3:
-      st.header('Nada')
+      st.header('Vacio')
       client1.publish("EWAW","{'gesto': 'Nada'}",qos=0, retain=False)
       time.sleep(0.2)  

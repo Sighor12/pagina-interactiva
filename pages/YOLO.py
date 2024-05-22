@@ -24,9 +24,8 @@ with st.sidebar:
 with st.sidebar:
             model.conf = st.slider('Seleccione el Confidence',0.0, 1.0)
             st.write('Conf:', model.conf)
-            st.write("la siguiente interfaz es relacionada a YOLO (You Only Look Once), consiste en un sistema que puede detectar objetos dentro de una foto en tiempo real que utiliza una única red neuronal para dicha tarea. ¡Activa tu camara y ve por ti mismo como funciona!")
 
-
+st.write("la siguiente interfaz es relacionada a YOLO (You Only Look Once), consiste en un sistema que puede detectar objetos dentro de una foto en tiempo real que utiliza una única red neuronal para dicha tarea. ¡Activa tu camara y ve por ti mismo como funciona!")
 picture = st.camera_input("Capturar foto",label_visibility='visible' )
 
 if picture:

@@ -2,6 +2,7 @@ import streamlit as st
 from PIL import Image
 
 st.title("gracias por participar")
+st.subheader("nos vemos pronto")
 image = Image.open('Despedida.jpg')
 st.image(image)
 

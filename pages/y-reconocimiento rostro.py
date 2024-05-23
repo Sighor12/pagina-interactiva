@@ -34,7 +34,8 @@ data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 st.title("Sistema MQTT")
 st.write("este sistema está conectado con una página externa llamada Wokwi, la cual consiste en un simulador de sistemas embebidos físicos y su funcionamiento por medio de códigos. Este sistema funciona de forma que debes aparecer tu en la imagen y que debe quedar vacio el espacio detras tuyo. Debajo estará el link para ingresar al sistema de la página. ¡pruebalo como se ve!")
 
-st.page_link("https://wokwi.com/projects/396783658426730497")
+st.write("página wokwi: [link](https://wokwi.com/projects/396783658426730497)")
+
 img_file_buffer = st.camera_input("Toma una Foto")
 
 if img_file_buffer is not None:

@@ -8,6 +8,7 @@ opencv-python-headless
 Pillow
 tensorflow==2.12
 paho-mqtt==1.6.1
+textblob==0.17.1
 
 Jinja2 >=2.9
 contourpy >=1

@@ -7,6 +7,7 @@ import numpy as np
 #from PIL import Image
 from PIL import Image as Image, ImageOps as ImagOps
 from keras.models import load_model
+from PIL import Image
 
 def on_publish(client,userdata,result):             #create function for callback
     print("el dato ha sido publicado \n")
@@ -32,6 +33,8 @@ model = load_model('keras_model.h5')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
 st.title("Sistema MQTT")
+image = Image.open('MQTT sistema.jpg')
+st.image(image)
 st.write("este sistema está conectado con una página externa llamada Wokwi, la cual consiste en un simulador de sistemas embebidos físicos y su funcionamiento por medio de códigos. Este sistema funciona de forma que debes aparecer tu en la imagen y que debe quedar vacio el espacio detras tuyo. Debajo estará el link para ingresar al sistema de la página. ¡pruebalo como se ve!")
 
 st.write("página wokwi: [link](https://wokwi.com/projects/396783658426730497)")

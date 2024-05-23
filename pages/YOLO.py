@@ -16,6 +16,9 @@ model.max_det = 1000
 
 st.title("Sistema YOLO")
 st.subheader("identificación de objetos en fotos o imágenes")
+image = Image.open('YOLO uso.jpg')
+st.image(image)
+
 
 with st.sidebar:
             st.subheader('Parámetros de Configuración')

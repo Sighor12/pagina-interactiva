@@ -4,6 +4,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from ultralytics import YOLO
+from PIL import Image
 
 model = yolov5.load('yolov5s.pt')
 

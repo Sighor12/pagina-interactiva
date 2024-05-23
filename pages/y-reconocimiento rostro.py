@@ -54,11 +54,11 @@ if img_file_buffer is not None:
     # run the inference
     prediction = model.predict(data)
     print(prediction)
-    if prediction[0][0]>0.3:
+    if prediction[0][0]>0.5:
       st.header('Ser')
       client1.publish("EWAW","{'gesto': 'persona'}",qos=0, retain=False)
       time.sleep(0.2)
-    if prediction[0][1]>0.3:
+    if prediction[0][1]>0.5:
       st.header('Nada')
       client1.publish("EWAW","{'gesto': 'vacio'}",qos=0, retain=False)
       time.sleep(0.2)  

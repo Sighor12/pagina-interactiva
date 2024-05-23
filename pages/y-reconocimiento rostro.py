@@ -31,7 +31,8 @@ client1.connect(broker,port)
 model = load_model('keras_model.h5')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
-st.title("Percepción de persona")
+st.title("Sistema MQTT")
+st.write("este sistema está conectado con una página externa llamada Wokwi, la cual consiste en un simulador de sistemas embebidos físicos y su funcionamiento por medio de códigos. Este sistema funciona de forma que debes aparecer tu en la imagen y que debe quedar vacio el espacio detras tuyo. Debajo estará el link para ingresar al sistema de la página. ¡pruebalo como se ve!")
 
 img_file_buffer = st.camera_input("Toma una Foto")
 
@@ -55,10 +56,10 @@ if img_file_buffer is not None:
     prediction = model.predict(data)
     print(prediction)
     if prediction[0][0]>0.5:
-      st.header('Ser')
-      client1.publish("EWAW","{'gesto': 'persona'}",qos=0, retain=False)
+      st.header('Joven')
+      client1.publish("EWAW","{'gesto': 'Persona'}",qos=0, retain=False)
       time.sleep(0.2)
     if prediction[0][1]>0.5:
-      st.header('Nada')
-      client1.publish("EWAW","{'gesto': 'vacio'}",qos=0, retain=False)
+      st.header('Vacio')
+      client1.publish("EWAW","{'gesto': 'Nada'}",qos=0, retain=False)
       time.sleep(0.2)  
